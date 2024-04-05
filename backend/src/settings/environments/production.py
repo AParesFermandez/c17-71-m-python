@@ -27,7 +27,8 @@ CORS_ORIGIN_ALLOW_ALL = False
 
 CORS_ORIGIN_WHITELIST = [
     f"https://{config('CLIENT_HOST', cast=str)}",
-    f"https://{config('TEST_HOST', cast=str)}",
+    f"https://{config('TEST_HOST', cast=str)}:5174",
+    f"https://{config('TEST_HOST', cast=str)}:5173",
 ]
 
 
